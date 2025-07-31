@@ -12,7 +12,7 @@
   <div class="card">
     <div class="search">
       <input type="search" name="city" placeholder="Enter city name" spellcheck="false" />
-      <button><img src="/assets/img/search.png" alt="Search" /></button>
+      <button><img src="./assets/img/search.png" alt="Search" /></button>
     </div>
 
     <div class="error">
@@ -20,20 +20,20 @@
     </div>
 
     <div class="weather">
-      <img src="/assets/img/rain.png" alt="Weather Icon" class="weather-icon" />
+      <img src="./assets/img/rain.png" alt="Weather Icon" class="weather-icon" />
       <h1 class="temp">00</h1>
       <h2 class="city">City Name</h2>
 
       <div class="details">
         <div class="col">
-          <img src="/assets/img/humidity.png" alt="Humidity" />
+          <img src="./assets/img/humidity.png" alt="Humidity" />
           <div>
             <p class="humidity">50%</p>
             <p>Humidity</p>
           </div>
         </div>
         <div class="col">
-          <img src="/assets/img/wind.png" alt="Wind" />
+          <img src="./assets/img/wind.png" alt="Wind" />
           <div>
             <p class="wind">15 km/h</p>
             <p>Wind Speed</p>
@@ -67,15 +67,15 @@
           data.wind.speed + " km/h";
 
         if (data.weather[0].main === "Clouds") {
-          weatherIcon.src = "/assets/img/clouds.png";
+          weatherIcon.src = "./assets/img/clouds.png";
         } else if (data.weather[0].main === "Clear") {
-          weatherIcon.src = "/assets/img/clear.png";
+          weatherIcon.src = "./assets/img/clear.png";
         } else if (data.weather[0].main === "Rain") {
-          weatherIcon.src = "/assets/img/rain.png";
+          weatherIcon.src = "./assets/img/rain.png";
         } else if (data.weather[0].main === "Drizzle") {
-          weatherIcon.src = "/assets/img/clear.png";
+          weatherIcon.src = "./assets/img/clear.png";
         } else if (data.weather[0].main === "Mist") {
-          weatherIcon.src = "/assets/img/mist.png";
+          weatherIcon.src = "./assets/img/mist.png";
         }
 
         document.querySelector(".weather").style.display = "block";
